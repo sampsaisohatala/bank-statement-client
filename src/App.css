@@ -1,38 +1,166 @@
-.App {
-  text-align: center;
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.background {
+   position: relative;
+   width: 100vw;
+   height: 2351px;
+   background: #fff5f5;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bgLine1 {
+   position: absolute;
+   width: 100vw;
+   height: auto;
+   top: 197.67px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bgLine2 {
+   position: absolute;
+   width: 100vw;
+   height: auto;
+   top: 78px;
 }
+.heading {
+   position: absolute;
+   width: 100%;
+   height: 38px;
+   top: 127px;
 
-.App-link {
-  color: #61dafb;
+   /* Title 02 */
+
+   font-family: Crete Round;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 28px;
+   line-height: 38px;
+   /* identical to box height, or 136% */
+
+   text-align: center;
+   letter-spacing: 0.02em;
+
+   /* Text 02 */
+
+   color: #000c38;
 }
+.balance {
+   position: absolute;
+   width: 678px;
+   height: 98px;
+   left: 50%;
+   transform: translateX(-50%);
+   top: 182px;
+   display: flex;
+}
+.balance div {
+   margin: 2px;
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background: #fffcfc;
+   opacity: 0.9;
+   box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12);
+}
+.balance div h3 {
+   /* Body 04 */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+   font-family: Mulish;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 24px;
+   /* identical to box height, or 171% */
+
+   text-align: center;
+   letter-spacing: 0.02em;
+
+   /* Text 03 */
+
+   color: #314a6f;
+}
+.balance div span {
+   font-family: Mulish;
+   font-style: normal;
+   font-weight: 800;
+   font-size: 22px;
+   line-height: 26px;
+   /* identical to box height, or 118% */
+
+   text-align: center;
+   letter-spacing: 0.02em;
+
+   /* Text 02 */
+
+   color: #000c38;
+}
+.inputFields {
+   display: flex;
+   flex-direction: column;
+   position: absolute;
+   top: 300px;
+   width: 100%;
+   padding: 0 44px;
+}
+.inputFields input {
+   font-family: Mulish;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 20px;
+   letter-spacing: 0.02em;
+   height: 38px;
+   padding-left: 10px;
+   margin-bottom: 18px;
+   color: #000c38;
+}
+.statements {
+   position: absolute;
+   width: 100%;
+   height: 72px;
+   top: 415px;
+   padding: 0 44px;
+}
+.statement-header {
+   height: 72px;
+   background: #000d38;
+   border: 1px solid rgba(108, 105, 136, 0.53);
+   border-radius: 3px;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+}
+.statement-header h3 {
+   font-family: Mulish;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 24px;
+   line-height: 30px;
+   letter-spacing: 0.02em;
+   margin-left: 22px;
+   color: #ffc336;
+}
+.statement-container {
+   position: relative;
+   width: 100%;
+   background: #e5e5e5;
+   border: 1px solid rgba(108, 105, 136, 0.53);
+   border-radius: 3px;
+}
+.separator {
+   background: #e15100;
+   position: absolute;
+   top: 10px;
+   bottom: 10px;
+   width: 5px;
+   left: 15%;
+}
+.total-background {
+   background: rgba(255, 213, 194, 0.46);
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   width: 20%;
+   right: 0;
 }

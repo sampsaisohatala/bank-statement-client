@@ -1,0 +1,32 @@
+.navigation ul {
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+   justify-content: space-between;
+   padding: 0px;
+
+   position: absolute;
+   width: 873px;
+   height: 20px;
+   left: calc(50% - 873px / 2 - 0.5px);
+   top: 21px;
+}
+
+.navigation ul li {
+   /* Navigation 01 */
+
+   font-family: Crete Round;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 20px;
+   letter-spacing: 0.02em;
+
+   color: #ffc336;
+   list-style: none;
+   text-decoration: none;
+   cursor: pointer;
+}
+.active {
+   color: white !important;
+}

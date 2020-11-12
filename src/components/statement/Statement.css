@@ -1,0 +1,106 @@
+.statement {
+   width: 100%;
+   display: grid;
+   grid-template-columns: 15% 30% 35% 20%;
+   align-items: center;
+   height: 80px;
+}
+.statement-div {
+   display: flex;
+   flex-direction: column;
+   padding: 0 8px;
+}
+.statement-div div {
+   display: flex;
+   justify-content: space-between;
+}
+.statement-div div button {
+   border: none;
+   width: 14px;
+   height: 10px;
+}
+.polygon {
+   width: 14px;
+   height: 10px;
+}
+.date {
+   text-align: center;
+   font-family: Mulish;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 24px;
+   line-height: 30px;
+   letter-spacing: 0.02em;
+   color: #000000;
+}
+.amount {
+   font-family: Mulish;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 32px;
+   line-height: 40px;
+   text-align: right;
+   letter-spacing: 0.02em;
+   color: #00abe1;
+   padding-right: 128px;
+}
+.total {
+   text-align: center;
+   font-family: Mulish;
+   font-style: normal;
+   font-weight: 800;
+   font-size: 22px;
+   line-height: 26px;
+   letter-spacing: 0.02em;
+   color: #000c38;
+   z-index: 1;
+}
+.name {
+   font-family: Mulish;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 16px;
+   line-height: 20px;
+   letter-spacing: 0.02em;
+   color: #000c38;
+}
+.message {
+   font-family: Mulish;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 20px;
+   letter-spacing: 0.02em;
+   color: #000c38;
+}
+
+.statement-info {
+   width: 100%;
+   display: grid;
+   grid-template-columns: 15% 65% 20%;
+}
+.statement-info div {
+   grid-column-start: 2;
+   grid-column-end: 3;
+   background: rgba(196, 196, 196, 0.2);
+   display: flex;
+   width: 100%;
+}
+
+.statement-info div div {
+   padding: 10px;
+   display: flex;
+   flex-direction: column;
+   background: none;
+   font-family: Mulish;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 20px;
+   letter-spacing: 0.02em;
+   color: #000c38;
+   padding: 8px;
+}
+.statement-info div div span {
+   padding-left: 16px;
+}
