@@ -22,6 +22,11 @@
 .polygon {
    width: 14px;
    height: 10px;
+   transition: 0.5s ease;
+}
+.polygon.flipped {
+   transform: rotateZ(180deg);
+   transition: 0.5s ease;
 }
 .date {
    text-align: center;
@@ -75,6 +80,9 @@
 }
 
 .statement-info {
+   display: none;
+}
+.statement-info.active {
    width: 100%;
    display: grid;
    grid-template-columns: 15% 65% 20%;

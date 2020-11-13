@@ -6,7 +6,7 @@ function Header() {
       <div className="header">
          <div className="rectangle" />
          <img className="vector" src={process.env.PUBLIC_URL + `/images/Vector.svg`} alt="" />
-         <Navigation />
+         <Navigation top={true} />
          <div className="user">
             <div className="line" />
             <span>Maisa Yrittäjä</span>

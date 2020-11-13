@@ -1,8 +1,8 @@
 import './Navigation.css';
 
-function Navigation() {
+function Navigation(props) {
    return (
-      <div className="navigation">
+      <div className={props.top ? 'navigation top' : 'navigation bottom'}>
          <ul>
             <li>Etusivu</li>
             <li className="active">Tilit</li>

@@ -3,46 +3,36 @@ import './App.css';
 
 // components
 import Header from './components/header/Header';
-import Statement from './components/statement/Statement';
+import Statements from './components/statements/Statements';
 import Footer from './components/footer/Footer';
 
 function App() {
    const apiUrl = 'http://localhost:5001/bank-statement-api-b2ee6/us-central1/app/api/read';
    const [statements, setStatements] = useState(null);
+   const [error, setError] = useState(false);
 
-   async function handleFetch() {
-      const response = await fetch(apiUrl).catch(() => {
-         console.error('data fetch failed');
-      });
-      const data = await response.json().catch(() => {
-         console.error('json parse failed');
-      });
-
-      if (response.status === 200) {
-         console.log(response.status);
-         setStatements(data);
-      } else {
-         console.log(response.status);
-      }
-   }
-
-   console.log(statements);
-
-   // fetch country data
    useEffect(() => {
-      handleFetch();
+      fetch(apiUrl)
+         .then((res) => res.json())
+         .then((json) => setStatements(json))
+         .catch(() => {
+            console.error('fetching data failed');
+            setError(true);
+         });
    }, []);
 
    return (
       <div className="app">
+         {/** Background */}
          <div className="background">
             <img className="bgLine1" src={process.env.PUBLIC_URL + `/images/bgLine1.png`} alt="" />
             <img className="bgLine2" src={process.env.PUBLIC_URL + `/images/bgLine2.png`} alt="" />
          </div>
+
          <Header />
-         <h1 className="heading">Tilitapahtumat</h1>
 
          {/* Tilitapahtumat */}
+         <h1 className="heading">Tilitapahtumat</h1>
          <div className="balance">
             <div>
                <h3>Tiliotteen saldo</h3>
@@ -60,20 +50,17 @@ function App() {
             <input type="text" placeholder="Etsi tilitapahtuma"></input>
          </div>
 
-         <div className="statements">
-            <div className="statement-header">
-               {' '}
-               <h3>ELOKUU</h3>
+         {/* Show statements when they are loaded from API */}
+         {statements ? <Statements statements={statements} /> : ''}
+
+         {/* Show error message if statements arent loaded from API */}
+         {error ? (
+            <div className="error">
+               <h2>Error: fetching data failed. Make sure that bank-statement-api is running on localhost:5001</h2>
             </div>
-            <div className="statement-container">
-               <div className="total-background" />
-               <Statement />
-               <Statement />
-               <Statement />
-               <Statement />
-               <div className="separator" />
-            </div>
-         </div>
+         ) : (
+            ''
+         )}
          <Footer />
       </div>
    );

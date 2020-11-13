@@ -1,5 +1,83 @@
 .footer {
    position: absolute;
+   left: 0px;
+   top: 1626px;
+   width: 100vw;
+   height: 225px;
+}
+.links {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0px;
+   position: absolute;
+   width: 252px;
+   height: 18px;
+   left: calc(50% - 252px / 2 + 0.5px);
+   bottom: -30px;
+}
+.links li {
+   font-family: Mulish;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 18px;
+   text-align: center;
+   letter-spacing: 0.05em;
+   color: #ffc336;
+   text-decoration: none;
+   list-style: none;
+   cursor: pointer;
+}
+.footer-rectangle {
+   position: absolute;
+   left: 0px;
+   right: 0px;
+   top: 149px;
+   bottom: -60px;
+   background: #000c38;
+   transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.footer-vector {
+   position: absolute;
+   width: 100vw;
+   height: 49px;
    left: 0;
-   top: 2351px;
+   bottom: 43px;
+   transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.footer-logo {
+   position: absolute;
+   width: 144px;
+   height: 148.03px;
+   right: 80px;
+   bottom: 26.97px;
+}
+.footer-button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 8px 4px;
+   position: absolute;
+   width: 108px;
+   height: 43px;
+   right: 249px;
+   bottom: 109px;
+   background: #000c38;
+   border-radius: 4px;
+   cursor: pointer;
+}
+.footer-button span {
+   font-family: Oswald;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 22px;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   color: #ffc336;
+   align-self: center;
+   flex-grow: 0;
+   margin: 0px 0px;
 }

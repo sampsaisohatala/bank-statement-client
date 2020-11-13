@@ -6,7 +6,7 @@
 .background {
    position: relative;
    width: 100vw;
-   height: 2351px;
+
    background: #fff5f5;
 }
 .bgLine1 {
@@ -115,47 +115,7 @@
    margin-bottom: 18px;
    color: #000c38;
 }
-.statements {
-   position: absolute;
-   width: 100%;
-   height: 72px;
-   top: 415px;
-   padding: 0 44px;
-}
-.statement-header {
-   height: 72px;
-   background: #000d38;
-   border: 1px solid rgba(108, 105, 136, 0.53);
-   border-radius: 3px;
-   display: flex;
-   justify-content: flex-start;
-   align-items: center;
-}
-.statement-header h3 {
-   font-family: Mulish;
-   font-style: normal;
-   font-weight: normal;
-   font-size: 24px;
-   line-height: 30px;
-   letter-spacing: 0.02em;
-   margin-left: 22px;
-   color: #ffc336;
-}
-.statement-container {
-   position: relative;
-   width: 100%;
-   background: #e5e5e5;
-   border: 1px solid rgba(108, 105, 136, 0.53);
-   border-radius: 3px;
-}
-.separator {
-   background: #e15100;
-   position: absolute;
-   top: 10px;
-   bottom: 10px;
-   width: 5px;
-   left: 15%;
-}
+
 .total-background {
    background: rgba(255, 213, 194, 0.46);
    position: absolute;
@@ -163,4 +123,15 @@
    bottom: 0;
    width: 20%;
    right: 0;
+}
+.error {
+   position: absolute;
+   width: 100%;
+   height: 72px;
+   top: 415px;
+   padding: 0 44px;
+}
+.error h2 {
+   text-align: center;
+   font-size: 1.2rem;
 }
