@@ -53,7 +53,7 @@ function App() {
          {/* Show statements when they are loaded from API */}
          {statements ? <Statements statements={statements} /> : ''}
 
-         {/* Show error message if statements arent loaded from API */}
+         {/* Show error message if fetch fails */}
          {error ? (
             <div className="error">
                <h2>Error: fetching data failed. Make sure that bank-statement-api is running on localhost:5001</h2>
