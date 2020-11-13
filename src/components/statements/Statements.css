@@ -31,15 +31,7 @@
    border: 1px solid rgba(108, 105, 136, 0.53);
    border-radius: 3px;
 }
-.row {
-   display: flex;
-   flex-direction: row !important;
-   padding: 0 !important;
-}
-.row-head {
-   width: 110px;
-   padding: 0;
-}
+
 .separator {
    background: #e15100;
    position: absolute;
@@ -47,4 +39,10 @@
    bottom: 10px;
    width: 5px;
    left: 15%;
+}
+
+@media screen and (max-width: 900px) {
+   .statements {
+      padding: 0 4px;
+   }
 }

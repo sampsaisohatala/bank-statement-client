@@ -13,6 +13,9 @@ function Navigation(props) {
             <li>Hinnoittelu</li>
             <li>Asetukset</li>
          </ul>
+         <div>
+            <img className="hamburger" src={process.env.PUBLIC_URL + `/images/hamburger.jpg`} />
+         </div>
       </div>
    );
 }

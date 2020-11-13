@@ -1,15 +1,13 @@
-.navigation.top {
+.navigation {
    position: absolute;
    width: 873px;
    height: 20px;
    left: calc(50% - 873px / 2 - 0.5px);
+}
+.navigation.top {
    top: 21px;
 }
 .navigation.bottom {
-   position: absolute;
-   width: 873px;
-   height: 20px;
-   left: calc(50% - 873px / 2 + 0.5px);
    bottom: 30px;
 }
 .navigation ul {
@@ -34,4 +32,34 @@
 }
 .active {
    color: white !important;
+}
+.hamburger {
+   display: none;
+}
+@media screen and (max-width: 1200px) {
+   .navigation {
+      width: 573px;
+      left: calc(50% - 573px / 2 - 0.5px);
+   }
+   .navigation ul li {
+      font-size: 13px;
+   }
+}
+@media screen and (max-width: 620px) {
+   .navigation {
+      width: 100%;
+      left: 0;
+   }
+   .navigation ul {
+      display: none;
+   }
+   .hamburger {
+      display: block;
+      position: absolute;
+      top: -10px;
+      right: 20px;
+      fill: white;
+      width: 30px;
+      height: 35px;
+   }
 }

@@ -8,7 +8,7 @@ function Statement(props) {
       <div>
          <div className="statement">
             <span className="date">PE 21.8</span>
-            <span className="amount">{`+${props.statement.maara}`}</span>
+            <span className="amount">{`+${props.statement.maara.toFixed(2)} EUR`}</span>
             <div className="statement-div">
                <span className="name">{props.statement.saaja}</span>
                <div>
@@ -65,7 +65,7 @@ function Statement(props) {
                   </div>
                   <div className="row">
                      <span className="row-head">{`Määrä:`}</span>
-                     <span className="row-body">{`${props.statement.maara}`}</span>
+                     <span className="row-body">{`${props.statement.maara.toFixed(2)}€`}</span>
                   </div>
                   <div className="row">
                      <span className="row-head">{`Arkistotunnus:`}</span>

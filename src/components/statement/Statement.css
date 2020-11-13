@@ -59,12 +59,14 @@
    letter-spacing: 0.02em;
    color: #000c38;
    z-index: 1;
+   opacity: 0.6;
 }
 .name {
    font-family: Mulish;
    font-style: normal;
    font-weight: bold;
    font-size: 16px;
+   text-transform: uppercase;
    line-height: 20px;
    letter-spacing: 0.02em;
    color: #000c38;
@@ -111,4 +113,121 @@
 }
 .statement-info div div span {
    padding-left: 16px;
+}
+.row {
+   display: flex;
+   flex-direction: row !important;
+   padding: 0 !important;
+}
+.row-head {
+   width: 110px;
+   padding: 0;
+}
+
+@media screen and (max-width: 1200px) {
+   .amount {
+      font-size: 26px;
+      padding-right: 70px;
+   }
+}
+@media screen and (max-width: 900px) {
+   .amount {
+      font-size: 20px;
+      padding-right: 40px;
+   }
+   .date {
+      font-size: 16px;
+   }
+   .total {
+      font-size: 16px;
+   }
+   .row-head {
+      width: 80px;
+      padding: 0;
+   }
+   .statement-info div div {
+      font-size: 12px;
+   }
+   .statement-info div div span {
+      padding-left: 10px;
+   }
+}
+@media screen and (max-width: 600px) {
+   .amount {
+      font-size: 12px;
+      padding-right: 30px;
+   }
+   .date {
+      font-size: 10px;
+   }
+   .total {
+      font-size: 10px;
+   }
+   .row-head {
+      width: 60px;
+      padding: 0;
+   }
+   .statement-info div div {
+      font-size: 10px;
+   }
+   .statement-info div div span {
+      padding-left: 8px;
+   }
+   .name {
+      font-size: 12px;
+   }
+   .message {
+      font-size: 12px;
+   }
+}
+@media screen and (max-width: 600px) {
+   .amount {
+      font-size: 12px;
+      padding-right: 30px;
+   }
+   .date {
+      font-size: 10px;
+   }
+   .total {
+      font-size: 10px;
+   }
+   .row-head {
+      width: 60px;
+      padding: 0;
+   }
+   .row-body {
+      padding-left: 20px !important;
+   }
+   .statement-info div div {
+      font-size: 10px;
+   }
+   .statement-info div div span {
+      padding-left: 12px;
+   }
+   .name {
+      font-size: 12px;
+   }
+   .message {
+      font-size: 12px;
+   }
+}
+@media screen and (max-width: 480px) {
+   .statement-info div {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      background: rgba(196, 196, 196, 0.2);
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+   }
+   .row {
+      margin-left: 12px;
+   }
+   .amount {
+      font-size: 10px;
+      padding-right: 20px;
+   }
+   .total {
+      font-size: 8px;
+   }
 }

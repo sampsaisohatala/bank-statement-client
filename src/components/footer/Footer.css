@@ -81,3 +81,14 @@
    flex-grow: 0;
    margin: 0px 0px;
 }
+
+@media screen and (max-width: 1300px) {
+   .footer-logo {
+      right: 50px;
+      bottom: 100px;
+   }
+   .footer-button {
+      right: 200px;
+      bottom: 150px;
+   }
+}
