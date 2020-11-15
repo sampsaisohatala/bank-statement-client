@@ -8,7 +8,10 @@ function Statement(props) {
       <div>
          <div className="statement">
             <span className="date">PE 21.8</span>
-            <span className="amount">{`+${props.statement.maara.toFixed(2)} EUR`}</span>
+            <span className={props.statement.maara > 0 ? 'amount' : 'amount negative'}>
+               {' '}
+               {props.statement.maara > 0 ? `+${props.statement.maara.toFixed(2)} EUR` : `${props.statement.maara.toFixed(2)} EUR`}
+            </span>
             <div className="statement-div">
                <span className="name">{props.statement.saaja}</span>
                <div>

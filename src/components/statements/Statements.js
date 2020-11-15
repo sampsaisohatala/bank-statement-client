@@ -14,7 +14,7 @@ function Statements(props) {
                return <Statement key={i} statement={statement} />;
             })}
 
-            <div className="separator" />
+            <div className="separator"></div>
          </div>
       </div>
    );

@@ -1,9 +1,8 @@
 .statements {
-   position: absolute;
    width: 100%;
-   height: 72px;
-   top: 415px;
+   height: auto;
    padding: 0 44px;
+   z-index: 1;
 }
 .statement-header {
    height: 72px;
@@ -30,6 +29,7 @@
    background: #e5e5e5;
    border: 1px solid rgba(108, 105, 136, 0.53);
    border-radius: 3px;
+   padding-bottom: 88px;
 }
 
 .separator {

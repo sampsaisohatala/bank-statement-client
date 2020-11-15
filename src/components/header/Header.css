@@ -16,10 +16,7 @@
    position: absolute;
    width: 100vw;
    height: 49px;
-
    top: 23px;
-
-   /* Widget BG 01 */
 }
 .rectangle {
    position: absolute;
@@ -27,14 +24,11 @@
    right: 0px;
    top: 0px;
    height: 50px;
-
-   /* Widget BG 01 */
-
    background: #000c38;
 }
 .user {
    position: absolute;
-   width: 120px;
+   width: 93px;
    height: 29px;
    right: 40px;
    top: 17px;
@@ -44,27 +38,24 @@
    cursor: pointer;
 }
 .user span {
-   width: 120px;
-   height: 19px;
-
+   width: 93px;
+   height: 21px;
    font-family: Oswald;
    font-style: normal;
    font-weight: 500;
    font-size: 13px;
-   line-height: 19px;
+   line-height: 20px;
    letter-spacing: 0.06em;
    text-transform: uppercase;
    text-align: center;
    color: #ffc336;
 }
 .line {
-   width: 120px;
+   width: 93px;
    height: 0px;
-   border: 2px dashed #00abe1;
+   border-top: 2px dashed #00abe1;
 }
 
-@media screen and (max-width: 1200px) {
-}
 @media screen and (max-width: 900px) {
    .logo {
       display: none;

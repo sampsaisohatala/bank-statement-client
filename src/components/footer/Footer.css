@@ -1,9 +1,8 @@
 .footer {
-   position: absolute;
-   left: 0px;
-   top: 1626px;
+   position: relative;
    width: 100vw;
    height: 225px;
+   margin-top: 300px;
 }
 .links {
    display: flex;
@@ -62,7 +61,7 @@
    position: absolute;
    width: 108px;
    height: 43px;
-   right: 249px;
+   right: 229px;
    bottom: 109px;
    background: #000c38;
    border-radius: 4px;

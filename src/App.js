@@ -48,6 +48,7 @@ function App() {
          <div className="inputFields">
             <input type="text" placeholder="FI95 5190 0220 5004 89, KÄYTTÖTILI 92,83 €" />
             <input type="text" placeholder="Etsi tilitapahtuma"></input>
+            <img className="union" src={process.env.PUBLIC_URL + `/images/Union.png`} />
          </div>
 
          {/* Show statements when they are loaded from API */}

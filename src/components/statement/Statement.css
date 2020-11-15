@@ -44,10 +44,12 @@
    font-weight: bold;
    font-size: 32px;
    line-height: 40px;
-   text-align: right;
+   text-align: center;
    letter-spacing: 0.02em;
    color: #00abe1;
-   padding-right: 128px;
+}
+.amount.negative {
+   color: #e15100;
 }
 .total {
    text-align: center;
@@ -111,9 +113,7 @@
    color: #000c38;
    padding: 8px;
 }
-.statement-info div div span {
-   padding-left: 16px;
-}
+
 .row {
    display: flex;
    flex-direction: row !important;
@@ -122,18 +122,20 @@
 .row-head {
    width: 110px;
    padding: 0;
+   padding-left: 16px;
+}
+.row-body {
+   padding-left: 22px;
 }
 
 @media screen and (max-width: 1200px) {
    .amount {
       font-size: 26px;
-      padding-right: 70px;
    }
 }
 @media screen and (max-width: 900px) {
    .amount {
       font-size: 20px;
-      padding-right: 40px;
    }
    .date {
       font-size: 16px;
@@ -148,42 +150,17 @@
    .statement-info div div {
       font-size: 12px;
    }
-   .statement-info div div span {
-      padding-left: 10px;
-   }
-}
-@media screen and (max-width: 600px) {
-   .amount {
-      font-size: 12px;
-      padding-right: 30px;
-   }
-   .date {
-      font-size: 10px;
-   }
-   .total {
-      font-size: 10px;
-   }
    .row-head {
-      width: 60px;
-      padding: 0;
-   }
-   .statement-info div div {
-      font-size: 10px;
-   }
-   .statement-info div div span {
       padding-left: 8px;
    }
-   .name {
-      font-size: 12px;
-   }
-   .message {
-      font-size: 12px;
+   .row-body {
+      padding-left: 22px;
    }
 }
+
 @media screen and (max-width: 600px) {
    .amount {
       font-size: 12px;
-      padding-right: 30px;
    }
    .date {
       font-size: 10px;
@@ -194,15 +171,16 @@
    .row-head {
       width: 60px;
       padding: 0;
+      padding-left: 6px;
    }
    .row-body {
-      padding-left: 20px !important;
+      padding-left: 32px;
    }
    .statement-info div div {
       font-size: 10px;
    }
-   .statement-info div div span {
-      padding-left: 12px;
+   .row-body {
+      padding-left: 22px;
    }
    .name {
       font-size: 12px;
@@ -225,9 +203,11 @@
    }
    .amount {
       font-size: 10px;
-      padding-right: 20px;
    }
    .total {
       font-size: 8px;
+   }
+   .row-body {
+      padding-left: 32px;
    }
 }

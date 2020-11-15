@@ -5,7 +5,11 @@ function Navigation(props) {
       <div className={props.top ? 'navigation top' : 'navigation bottom'}>
          <ul>
             <li>Etusivu</li>
-            <li className="active">Tilit</li>
+            <li className="active">
+               Tilit
+               <img className="underline" src={process.env.PUBLIC_URL + `/images/underline.svg`} />
+            </li>
+
             <li>Palkanlaskenta</li>
             <li>Tulosseuranta</li>
             <li>Kirjanpito</li>
