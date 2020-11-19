@@ -7,7 +7,7 @@ function Navigation(props) {
             <li>Etusivu</li>
             <li className="active">
                Tilit
-               <img className="underline" src={process.env.PUBLIC_URL + `/images/underline.svg`} />
+               <img className="underline" src={process.env.PUBLIC_URL + `/images/underline.svg`} alt="" />
             </li>
 
             <li>Palkanlaskenta</li>
@@ -18,7 +18,7 @@ function Navigation(props) {
             <li>Asetukset</li>
          </ul>
          <div>
-            <img className="hamburger" src={process.env.PUBLIC_URL + `/images/hamburger.jpg`} />
+            <img className="hamburger" src={process.env.PUBLIC_URL + `/images/hamburger.jpg`} alt="" />
          </div>
       </div>
    );

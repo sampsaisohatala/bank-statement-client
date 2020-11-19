@@ -26,7 +26,6 @@ function App() {
          {/** Background */}
          <div className="background">
             <img className="bg3" src={process.env.PUBLIC_URL + `/images/lower-background.png`} alt="" />
-
             <img className="bgLine1" src={process.env.PUBLIC_URL + `/images/bgLine1.png`} alt="" />
             <img className="bgLine2" src={process.env.PUBLIC_URL + `/images/bgLine2.png`} alt="" />
          </div>
@@ -50,7 +49,7 @@ function App() {
          <div className="inputFields">
             <input type="text" placeholder="FI95 5190 0220 5004 89, KÄYTTÖTILI 92,83 €" />
             <input type="text" placeholder="Etsi tilitapahtuma"></input>
-            <img className="union" src={process.env.PUBLIC_URL + `/images/Union.png`} />
+            <img className="union" src={process.env.PUBLIC_URL + `/images/Union.png`} alt="" />
          </div>
 
          {/* Show statements when they are loaded from API */}
