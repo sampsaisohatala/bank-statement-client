@@ -25,6 +25,8 @@ function App() {
       <div className="app">
          {/** Background */}
          <div className="background">
+            <img className="bg3" src={process.env.PUBLIC_URL + `/images/lower-background.png`} alt="" />
+
             <img className="bgLine1" src={process.env.PUBLIC_URL + `/images/bgLine1.png`} alt="" />
             <img className="bgLine2" src={process.env.PUBLIC_URL + `/images/bgLine2.png`} alt="" />
          </div>

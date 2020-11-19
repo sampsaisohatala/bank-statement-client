@@ -29,6 +29,7 @@ function Statement(props) {
                </div>
             </div>
             <span className="total">-4 465,45 EUR</span>
+            <div className="seperator-line" />
          </div>
 
          {/* Show info of specific statement when collapsed button is clicked */}

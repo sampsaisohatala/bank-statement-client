@@ -19,6 +19,15 @@
    width: 14px;
    height: 10px;
 }
+.seperator-line {
+   position: absolute;
+   width: 15px;
+   height: 5px;
+   left: calc(15% - 5px);
+
+   transform: translateY(40px);
+   background: #e15100;
+}
 .polygon {
    width: 14px;
    height: 10px;
