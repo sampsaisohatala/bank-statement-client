@@ -24,14 +24,14 @@
    position: absolute;
    width: 100vw;
    height: auto;
-   top: 98px;
+   top: 78px;
 }
 .bg3 {
    position: absolute;
-   width: 1440px;
-   height: 3391px;
+   width: 100vw;
+   height: auto;
    left: 0px;
-   top: 147.17px;
+   top: 347.17px;
 }
 .heading {
    width: 100%;
@@ -134,8 +134,24 @@
 }
 
 @media screen and (max-width: 1200px) {
+   .bgLine1 {
+      top: 257.67px;
+   }
+   .bgLine2 {
+      top: 158px;
+   }
 }
 @media screen and (max-width: 900px) {
+   .bgLine1 {
+      /* ylempi */
+      top: 237.67px;
+   }
+   .bgLine2 {
+      top: 218px;
+   }
+   .bg3 {
+      top: 267.17px;
+   }
    .balance {
       width: 90%;
    }
