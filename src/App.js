@@ -25,6 +25,7 @@ function App() {
       <div className="app">
          {/** Background */}
          <div className="background">
+            <div className="bg4" />
             <img className="bg3" src={process.env.PUBLIC_URL + `/images/lower-background.png`} alt="" />
             <img className="bgLine1" src={process.env.PUBLIC_URL + `/images/bgLine1.png`} alt="" />
             <img className="bgLine2" src={process.env.PUBLIC_URL + `/images/bgLine2.png`} alt="" />
@@ -53,15 +54,13 @@ function App() {
          </div>
 
          {/* Show statements when they are loaded from API */}
-         {statements ? <Statements statements={statements} /> : ''}
+         {statements && <Statements statements={statements} />}
 
          {/* Show error message if fetch fails */}
-         {error ? (
+         {error && (
             <div className="error">
                <h2>Error: fetching data failed. Make sure that bank-statement-api is running on localhost:5001</h2>
             </div>
-         ) : (
-            ''
          )}
          <Footer />
       </div>
